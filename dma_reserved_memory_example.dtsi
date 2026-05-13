@@ -1,0 +1,12 @@
+/ {
+	reserved-memory {
+		#address-cells = <1>;
+		#size-cells = <1>;
+		ranges;
+
+		ui_dma_reserved: dma-buffer@30000000 {
+			no-map;
+			reg = <0x30000000 0x00100000>;
+		};
+	};
+};
